@@ -1,7 +1,6 @@
 package configuration.utilities;
 
-import com.target.pages.AboutPage;
-import configuration.common.GlobalReUsableMethods;
+//import com.target.pages.AboutPage;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -102,10 +101,10 @@ public class DataProviderUtils {
     @Test(dataProvider = "RegistrationDataFromExcel", dataProviderClass = DataProviderUtils.class)
     public void testDataProviderUsingExcel(String firstName, String email,String password,String rePassword){
         System.out.println("keyWord1 :"+firstName +" keyWord2 :"+email+" keyWord3 :"+password+" keyWord4 :"+rePassword);
-        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,firstName);
-        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,email);
-        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,password);
-        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,rePassword);
+//        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,firstName);
+//        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,email);
+//        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,password);
+//        GlobalReUsableMethods.enterValueOnElement(AboutPage.about,rePassword);
     }
 
 

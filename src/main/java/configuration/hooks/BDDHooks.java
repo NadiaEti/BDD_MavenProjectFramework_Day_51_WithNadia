@@ -16,7 +16,7 @@ public class BDDHooks extends WebTestBase {
 
     @Before
     public void setUpBrowser() throws MalformedURLException {
-        setUp(false,"browserStack","windows","10","chrome","103","https://www.amazon.com/");
+     setUp(false,"browserStack","windows","10","chrome","103","https://www.target.com/");
     }
 
 
@@ -27,7 +27,7 @@ public class BDDHooks extends WebTestBase {
             final byte[] screenShot= ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenShot,"image/png","demo1");
         }
-        tearDownAutomation();
+       tearDownAutomation();
     }
 
     @BeforeAll

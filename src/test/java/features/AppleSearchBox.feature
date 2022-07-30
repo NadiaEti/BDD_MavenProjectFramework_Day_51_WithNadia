@@ -1,9 +1,10 @@
-#Feature: Apple SearchBox Functionality
+Feature: Apple SearchBox Functionality
 #
 #
+
 #
-#
-#Scenario: Apple search box functionality verify with valid product name
+  @sharif
+Scenario: Apple search box functionality verify with valid product name
 #
 #Scenario: Apple search box functionality verify with Invalid product name
 #
