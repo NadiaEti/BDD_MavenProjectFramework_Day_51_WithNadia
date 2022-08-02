@@ -1,6 +1,6 @@
 package configuration.common;
 
-import configuration.reporting.TestLogger;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
@@ -82,7 +82,7 @@ public class GlobalReUsableMethods extends WebTestBase {
         boolean element = webDriverWait.until(ExpectedConditions.elementToBeSelected(ele));
         return element;
     }
-//3:15 min  (49 video)
+    //3:15 min  (49 video)
     public static void waitUntilClickable(WebElement ele) {
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement element = webDriverWait.until(ExpectedConditions.visibilityOf(ele));
@@ -251,6 +251,7 @@ public class GlobalReUsableMethods extends WebTestBase {
     }
 
     public void goBackToHomeWindow() {
+
         driver.switchTo().defaultContent();
     }
 
@@ -368,6 +369,7 @@ public class GlobalReUsableMethods extends WebTestBase {
 
     // ------------------- CLICK -----------------
     public void clickByXpath1(String loc) {
+
         driver.findElement(By.xpath(loc)).click();
     }
 
@@ -442,15 +444,15 @@ public class GlobalReUsableMethods extends WebTestBase {
 
 
     public void getTitle() {
-        TestLogger.log("Get Title ");
+        getLog("Get Title ");
         driver.getTitle();
     }
 
 
     public static String getText(WebElement element, String webElementName) {
-        TestLogger.log("Getting Text from " + webElementName);
+        getLog("Getting Text from " + webElementName);
         String actualText = element.getText();
-        TestLogger.log("Actual text: " + actualText);
+        getLog("Actual text: " + actualText);
         return actualText;
     }
 

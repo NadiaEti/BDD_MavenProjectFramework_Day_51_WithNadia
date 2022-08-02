@@ -1,0 +1,5 @@
+stepdefinitions\CategoriesSteps.class
+runner\SmokeTestRunner.class
+runner\RegressionTestRunner.class
+runner\TestRunner.class
+stepdefinitions\SearchBoxSteps.class

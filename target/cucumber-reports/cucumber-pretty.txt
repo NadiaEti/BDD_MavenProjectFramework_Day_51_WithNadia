@@ -1,0 +1,12 @@
+
+@RegressionTest @SmokeTest @Pending
+Scenario: SearchBox functionality should work with a valid product name # src/test/java/features/TargetSearchBox.feature:14
+  Given user is landed on target homepage                               # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+  And user enter valid product name                                     # stepdefinitions.SearchBoxSteps.user_enter_valid_product_name()
+  When user click on search button                                      # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+  Then user should see the valid product appears                        # stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears()
+
+@RegressionTest @Pending
+Scenario: SearchBox functionality should not work with a Invalid product name # src/test/java/features/TargetSearchBox.feature:20
+  Given user is landed on target homepage                                     # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+  And user enter Invalid product name                                         # stepdefinitions.SearchBoxSteps.user_enter_invalid_product_name()

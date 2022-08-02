@@ -1,10 +1,6 @@
 package configuration.common;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-import configuration.reporting.ExtentManager;
-import configuration.reporting.ExtentTestManager;
+
 import configuration.utilities.ReadPropertiesFrom;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -18,7 +14,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -27,7 +22,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -45,19 +39,8 @@ public class WebTestBase {
 
     //Read Properties from utilities package.
     static Properties readProperty = ReadPropertiesFrom.loadProperties("src/main/resources/Config.properties");
-    String getBrowserStackUserName = readProperty.getProperty("BROWSERSTACK_USERNAME");
 
-
-
-    // Credential for Cloud Environments
-//    public static final String BROWSERSTACK_USERNAME = "demo_Kwqeyr";
-//    public static final String BROWSERSTACK_ACCESS_KEY = "VUHCsytd4dcyLK8Zpq4m";
-
-
-    // public static final String BROWSERSTACK_ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
-   // public static final String BROWSERSTACK_URL = "https://" + BROWSERSTACK_USERNAME + ":" + BROWSERSTACK_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-
-   // This BROWSERSTACK_URL one is for call Read properties from utilities package.
+    // This BROWSERSTACK_URL one is for call Read properties from utilities package.
     public static final String BROWSERSTACK_URL = "https://" + readProperty.getProperty("BROWSERSTACK_USERNAME") + ":" + readProperty.getProperty("BROWSERSTACK_ACCESS_KEY") + "@hub-cloud.browserstack.com/wd/hub";
 
     public static final String SAUCELABS_USERNAME = "beheb71544";
@@ -66,29 +49,7 @@ public class WebTestBase {
     //URL url = new URL("https://beheb71544:*****2de5@ondemand.us-west-1.saucelabs.com:443/wd/hub");
 
 
-    /**
-     * **************************************************
-     * ********** Start Of Reporting Utilities **********
-     * **************************************************
-     * **************************************************
-     */
-    //ExtentReport
-    public static ExtentReports extent;
-    public static ExtentTest logger;
 
-    @BeforeSuite
-    public void extentSetup(ITestContext context) {
-        ExtentManager.setOutputDirectory(context);
-        extent = ExtentManager.getInstance();
-    }
-
-    @BeforeMethod
-    public void startExtent(Method method) {
-        String className = method.getDeclaringClass().getSimpleName();
-        String methodName = method.getName().toLowerCase();
-        ExtentTestManager.startTest(method.getName());
-        ExtentTestManager.getTest().assignCategory(className);
-    }
 
     protected String getStackTrace(Throwable t) {
         StringWriter sw = new StringWriter();
@@ -96,118 +57,38 @@ public class WebTestBase {
         t.printStackTrace(pw);
         return sw.toString();
     }
-
-    @AfterMethod
-    public void afterEachTestMethod(ITestResult result) throws Exception {
-        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
-        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
-        for (String group : result.getMethod().getGroups()) {
-            ExtentTestManager.getTest().assignCategory(group);
-        }
-        if (result.getStatus() == 1) {
-            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
-        } else if (result.getStatus() == 2) {
-            //logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
-            // logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getThrowable());
-            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
-            //We do pass the path captured by this method in to the extent reports using "logger.addScreenCapture" method.
-            String screenshotPath = captureScreenShotWithPath(driver, result.getName());
-            //To add it in the extent report
-            //   logger.log(LogStatus.FAIL, logger.addScreenCapture(screenshotPath));
-
-//            if (result.getStatus() == ITestResult.FAILURE) {
-//                captureScreenShotWithPath(driver, result.getName());
-//                logger.log(LogStatus.FAIL, logger.addScreenCapture(screenshotPath));
-//            }
-
-        } else if (result.getStatus() == 3) {
-            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
-        }
-        ExtentTestManager.endTest();
-        extent.flush();
-
-        // driver.close();
-        //driver.quit();
-        // ending test
-        //endTest(logger) : It ends the current test and prepares to create HTML report
-        extent.endTest(logger);
-    }
-
-    @AfterSuite
-    public void generateReport() {
-        extent.close();
-    }
-
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
 
-
     public static String convertToString(String st) {
         String splitString = "";
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
         return splitString;
     }
-
     // Configuration purpose
 
-    @BeforeTest
     public void setUpAutomation() {
+
         System.out.println("***************** Automation Started *******************");
     }
 
-    @AfterTest
     public void tearDownAutomation() {
-       // driver.close();
+        //  driver.close();
         if (driver != null) {
             driver.quit();
         }
-        System.out.println("***************** Automation End *******************");
-
     }
-    //This parameter is for ReadSystemProperty purpose
-    /**
-     //     * This method will accept url based on Environment from command line during the execution
-     //     * @param useCloudEnv
-     //     * @param cloudEnvName
-     //     * @param os
-     //     * @param osVersion
-     //     * @param browserName
-     //     * @param browserVersion
-     //     * @throws MalformedURLException
-     //     */
 
-//    @Parameters({"useCloudEnv","cloudEnvName","os","osVersion","browserName","browserVersion","url"})
-//    @BeforeMethod
-//    public void setUp(@Optional("false")boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("OS X") String os,@Optional("Big Sure") String osVersion, @Optional("firefox") String browserName,@Optional("100") String browserVersion) throws MalformedURLException {
-//        if (useCloudEnv) {
-//            if (cloudEnvName.equalsIgnoreCase("browserStack")) {
-//                getCloudDriver(cloudEnvName, os, osVersion, browserName, browserVersion);
-//            }
-//        } else {
-//            grtLocalDriver(os,browserName);
-//        }
-//        getLog("Browser : " + browserName);
-//        getLog("Url : " + ReadSystemProperties.getEnvUrl());
-//        driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-//        driver.manage().deleteAllCookies();
-//        driver.get(ReadSystemProperties.getEnvUrl());
-//    }
-//
-
-    @Parameters({"useCloudEnv","cloudEnvName","os","osVersion","browserName","browserVersion","url"})
-    @BeforeMethod
-    public void setUp(@Optional("false")boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("OS X") String os,@Optional("Big Sure") String osVersion, @Optional("firefox") String browserName,@Optional("100") String browserVersion, @Optional("https://www.google.com") String url) throws MalformedURLException {
+    public void setUp(boolean useCloudEnv, String cloudEnvName, String os, String osVersion, String browserName, String browserVersion, String url) throws MalformedURLException {
         if (useCloudEnv) {
             if (cloudEnvName.equalsIgnoreCase("browserStack")) {
                 getCloudDriver(cloudEnvName, os, osVersion, browserName, browserVersion);
             }
         } else {
-            grtLocalDriver(os,browserName);
+            grtLocalDriver(os, browserName);
         }
         getLog("Browser : " + browserName);
         getLog("Url : " + url);
@@ -219,13 +100,9 @@ public class WebTestBase {
     }
 
     public static void getLog(final String message) {
-
         Reporter.log(message, true);
     }
 
-
-    // Video_47     (4:00 min)
-    // Start setup different browser for operating system / os from here
 
     public WebDriver grtLocalDriver(String os, String browserName) {
         //For any operating system / os run

@@ -9,9 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
 
     <dependencies>
 
@@ -35,7 +37,6 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.6.1</version>
-            <!--        <scope>test</scope>-->
         </dependency>
 
 
@@ -153,20 +154,18 @@
             <version>23.0.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <!--            <scope>test</scope>-->
-        </dependency>
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>junit</groupId>-->
+        <!--            <artifactId>junit</artifactId>-->
+        <!--            <version>4.13.2</version>-->
+        <!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.4.1</version>
-            <!--            <scope>test</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
@@ -188,7 +187,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>7.4.1</version>
-            <!--            <scope>test</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
@@ -226,35 +224,15 @@
             <version>5.7.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.0-M1</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
             <version>2.2</version>
-            <!--            <scope>test</scope>-->
         </dependency>
 
         <!--            Extent Report with Cucumber-->
-        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.0.9</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
-        <dependency>
-            <groupId>com.relevantcodes</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>2.41.2</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
         <dependency>
@@ -276,12 +254,11 @@
                 <configuration>
                     <source>11</source>
                     <target>11</target>
-
                     <!--                    <release>16</release>-->
                     <fork>true</fork>
                     <compilerArgs>
                         <!--                            If JDK 11 then comment below line-->
-                        <!--                                                <arg>&#45;&#45;enable-preview</arg>-->
+                        <!--                        <arg>&#45;&#45;enable-preview</arg>-->
                         <arg>-Xlint:all</arg>
                         <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
                         <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED</arg>
@@ -332,44 +309,50 @@
                         <!--                        <include>**/AmazonSmokeTestRunner.java</include>-->
                     </includes>
                     <suiteXmlFiles>
-                        <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>target/test-classes/CNNTestRunner.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>target/test-classes/CignaTestRunner.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>target/test-classes/AmazonRegressionTestRunner.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>target/test-classes/TargetTestRunner.xml</suiteXmlFile>-->
+                        <suiteXmlFile>target/test-classes/TargetRegressionTestRunner.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>target/test-classes/TargetSmokeTestRunner.xml</suiteXmlFile>-->
+
 
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
 
 
+
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.7.1</version>
+                <version>5.6.1</version>
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>verify</phase>
                         <!--                        <phase>test</phase>-->
+                        <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
+
                         <configuration>
-                            <projectName>BDD Web Automation Cucumber Reports</projectName>
+                            <projectName>BDD-AutomationTestSuite</projectName>
                             <buildNumber>1</buildNumber>
                             <skip>false</skip>
-                            <!-- output directory for the generated report -->
-                            <outputDirectory>${project.build.directory}/cucumber-reports/advance-reports
+                            <outputDirectory>${project.build.directory}/cucumber-reports/advanced-reports
                             </outputDirectory>
-                            <!-- optional, defaults to outputDirectory if not specified -->
+                            <!--                            Custom Path for Reports-->
+                            <!--                            <outputDirectory>BG-TestAutomation-Reports</outputDirectory>-->
+
+                            <!--   <cucumberOutput>${project.build.directory}/cucumber-reports/cucumber-report.json</cucumberOutput>-->
+                            <!--     <outputDirectory>target/cucumber-reports/cucumber-report-html</outputDirectory>-->
+
                             <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
                             <jsonFiles>
-                                <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
                             </jsonFiles>
-
-                            <classificationDirectory>${project.build.directory}/cucumber-reports
+                            <!-- optional, defaults to outputDirectory if not specified -->
+                            <classificationDirectory>${project.build.directory}/classifications
                             </classificationDirectory>
-
                             <classificationFiles>
                                 <!-- supports wildcard or name pattern -->
                                 <param>sample.properties</param>
@@ -382,27 +365,20 @@
                             <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
                             <!-- optional, set true to fail build on test failures -->
                             <checkBuildResult>false</checkBuildResult>
+                            <classificationDirectory>${project.build.directory}/cucumber-reports
+                            </classificationDirectory>
+                            <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>
                 </executions>
 
             </plugin>
 
+
         </plugins>
 
 
-
-
-
-
-
     </build>
-
-
-
-
-
-
 
 
 </project>

@@ -1,0 +1,2009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="215.568" tests="5" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia/BrowserDriver/Windows/chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\test-classes;C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\classes;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Nadia\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Nadia\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\Nadia\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Nadia\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Nadia\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Nadia\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Nadia\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Nadia\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\Nadia\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-2\selenium-edgehtml-driver-4.0.0-alpha-2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1.jar;C:\Users\Nadia\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Nadia\.m2\repository\org\zeromq\jeromq\0.5.1\jeromq-0.5.1.jar;C:\Users\Nadia\.m2\repository\eu\neilalexander\jnacl\1.0.0\jnacl-1.0.0.jar;C:\Users\Nadia\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Nadia\.m2\repository\org\yaml\snakeyaml\1.24\snakeyaml-1.24.jar;C:\Users\Nadia\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\Nadia\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Nadia\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nadia\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Nadia\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\Nadia\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Nadia\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Nadia\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\Nadia\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Nadia\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-examples\5.2.2\poi-examples-5.2.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-scratchpad\5.2.2\poi-scratchpad-5.2.2.jar;C:\Users\Nadia\.m2\repository\mysql\mysql-connector-java\8.0.29\mysql-connector-java-8.0.29.jar;C:\Users\Nadia\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Nadia\.m2\repository\org\mongodb\mongo-java-driver\3.12.11\mongo-java-driver-3.12.11.jar;C:\Users\Nadia\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Nadia\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Nadia\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Nadia\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Nadia\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Nadia\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Nadia\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Nadia\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-core\7.4.1\cucumber-core-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-gherkin\7.4.1\cucumber-gherkin-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.4.1\cucumber-gherkin-messages-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\messages\18.0.0\messages-18.0.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-expressions\16.0.0\cucumber-expressions-16.0.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\datatable\7.4.1\datatable-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-plugin\7.4.1\cucumber-plugin-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\docstring\7.4.1\docstring-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\html-formatter\19.2.0\html-formatter-19.2.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\ci-environment\9.0.4\ci-environment-9.0.4.jar;C:\Users\Nadia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-java\7.4.1\cucumber-java-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\Nadia\.m2\repository\io\cucumber\gherkin\23.0.1\gherkin-23.0.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-junit\7.4.1\cucumber-junit-7.4.1.jar;C:\Users\Nadia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-testng\7.4.1\cucumber-testng-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-picocontainer\7.4.1\cucumber-picocontainer-7.4.1.jar;C:\Users\Nadia\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Nadia\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Nadia\.m2\repository\net\sourceforge\cobertura\cobertura\2.1.1\cobertura-2.1.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm\5.0.1\asm-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-tree\5.0.1\asm-tree-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-commons\5.0.1\asm-commons-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-util\5.0.1\asm-util-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-analysis\5.0.1\asm-analysis-5.0.1.jar;C:\Users\Nadia\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\Nadia\.m2\repository\jaxen\jaxen\1.1.4\jaxen-1.1.4.jar;C:\Users\Nadia\.m2\repository\org\apache\ant\ant\1.8.3\ant-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\apache\ant\ant-launcher\1.8.3\ant-launcher-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\apache\ant\ant-junit\1.8.3\ant-junit-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.14\servlet-api-2.5-6.1.14.jar;C:\Users\Nadia\.m2\repository\org\mortbay\jetty\jetty\6.1.14\jetty-6.1.14.jar;C:\Users\Nadia\.m2\repository\org\mortbay\jetty\jetty-util\6.1.14\jetty-util-6.1.14.jar;C:\Users\Nadia\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\Nadia\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\Nadia\.m2\repository\net\masterthought\cucumber-reporting\5.7.2\cucumber-reporting-5.7.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\Nadia\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\Nadia\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Nadia\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\Nadia\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\Nadia\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Nadia\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Nadia\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Nadia\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Nadia\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Nadia\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Nadia\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\Nadia\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Nadia\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Nadia\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Nadia\.m2\repository\net\masterthought\maven-cucumber-reporting\5.7.1\maven-cucumber-reporting-5.7.1.jar;C:\Users\Nadia\.m2\repository\org\apache\maven\maven-plugin-api\3.8.6\maven-plugin-api-3.8.6.jar;C:\Users\Nadia\.m2\repository\org\apache\maven\maven-model\3.8.6\maven-model-3.8.6.jar;C:\Users\Nadia\.m2\repository\org\apache\maven\maven-artifact\3.8.6\maven-artifact-3.8.6.jar;C:\Users\Nadia\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.5\org.eclipse.sisu.plexus-0.3.5.jar;C:\Users\Nadia\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\Nadia\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.5\org.eclipse.sisu.inject-0.3.5.jar;C:\Users\Nadia\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Nadia\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar;C:\Users\Nadia\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Nadia\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Nadia\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
+    <property name="sun.java.command" value="C:\Users\Nadia\AppData\Local\Temp\surefire11480276329968551687\surefirebooter16129722312814536086.jar C:\Users\Nadia\AppData\Local\Temp\surefire11480276329968551687 2022-08-01T21-33-47_930-jvmRun1 surefire7362693952744516459tmp surefire_06026988010782146859tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\test-classes;C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\classes;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Nadia\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Nadia\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\Nadia\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\Nadia\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Nadia\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Nadia\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Nadia\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Nadia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Nadia\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Nadia\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\Nadia\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-2\selenium-edgehtml-driver-4.0.0-alpha-2.jar;C:\Users\Nadia\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1.jar;C:\Users\Nadia\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Nadia\.m2\repository\org\zeromq\jeromq\0.5.1\jeromq-0.5.1.jar;C:\Users\Nadia\.m2\repository\eu\neilalexander\jnacl\1.0.0\jnacl-1.0.0.jar;C:\Users\Nadia\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Nadia\.m2\repository\org\yaml\snakeyaml\1.24\snakeyaml-1.24.jar;C:\Users\Nadia\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\Nadia\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Nadia\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nadia\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Nadia\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\Nadia\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Nadia\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Nadia\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\Nadia\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Nadia\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-examples\5.2.2\poi-examples-5.2.2.jar;C:\Users\Nadia\.m2\repository\org\apache\poi\poi-scratchpad\5.2.2\poi-scratchpad-5.2.2.jar;C:\Users\Nadia\.m2\repository\mysql\mysql-connector-java\8.0.29\mysql-connector-java-8.0.29.jar;C:\Users\Nadia\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Nadia\.m2\repository\org\mongodb\mongo-java-driver\3.12.11\mongo-java-driver-3.12.11.jar;C:\Users\Nadia\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Nadia\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Nadia\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Nadia\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Nadia\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Nadia\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Nadia\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Nadia\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Nadia\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-core\7.4.1\cucumber-core-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-gherkin\7.4.1\cucumber-gherkin-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.4.1\cucumber-gherkin-messages-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\messages\18.0.0\messages-18.0.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-expressions\16.0.0\cucumber-expressions-16.0.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\datatable\7.4.1\datatable-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-plugin\7.4.1\cucumber-plugin-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\docstring\7.4.1\docstring-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\html-formatter\19.2.0\html-formatter-19.2.0.jar;C:\Users\Nadia\.m2\repository\io\cucumber\ci-environment\9.0.4\ci-environment-9.0.4.jar;C:\Users\Nadia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-java\7.4.1\cucumber-java-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\Nadia\.m2\repository\io\cucumber\gherkin\23.0.1\gherkin-23.0.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-junit\7.4.1\cucumber-junit-7.4.1.jar;C:\Users\Nadia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-testng\7.4.1\cucumber-testng-7.4.1.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\Nadia\.m2\repository\io\cucumber\cucumber-picocontainer\7.4.1\cucumber-picocontainer-7.4.1.jar;C:\Users\Nadia\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Nadia\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Nadia\.m2\repository\net\sourceforge\cobertura\cobertura\2.1.1\cobertura-2.1.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm\5.0.1\asm-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-tree\5.0.1\asm-tree-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-commons\5.0.1\asm-commons-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-util\5.0.1\asm-util-5.0.1.jar;C:\Users\Nadia\.m2\repository\org\ow2\asm\asm-analysis\5.0.1\asm-analysis-5.0.1.jar;C:\Users\Nadia\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\Nadia\.m2\repository\jaxen\jaxen\1.1.4\jaxen-1.1.4.jar;C:\Users\Nadia\.m2\repository\org\apache\ant\ant\1.8.3\ant-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\apache\ant\ant-launcher\1.8.3\ant-launcher-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\apache\ant\ant-junit\1.8.3\ant-junit-1.8.3.jar;C:\Users\Nadia\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.14\servlet-api-2.5-6.1.14.jar;C:\Users\Nadia\.m2\repository\org\mortbay\jetty\jetty\6.1.14\jetty-6.1.14.jar;C:\Users\Nadia\.m2\repository\org\mortbay\jetty\jetty-util\6.1.14\jetty-util-6.1.14.jar;C:\Users\Nadia\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\Nadia\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\Nadia\.m2\repository\net\masterthought\cucumber-reporting\5.7.2\cucumber-reporting-5.7.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\Nadia\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\Nadia\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\Nadia\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Nadia\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\Nadia\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\Nadia\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Nadia\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Nadia\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Nadia\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Nadia\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Nadia\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Nadia\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\Nadia\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Nadia\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Nadia\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Nadia\.m2\repository\net\masterthought\maven-cucumber-reporting\5.7.1\maven-cucumber-reporting-5.7.1.jar;C:\Users\Nadia\.m2\repository\org\apache\maven\maven-plugin-api\3.8.6\maven-plugin-api-3.8.6.jar;C:\Users\Nadia\.m2\repository\org\apache\maven\maven-model\3.8.6\maven-model-3.8.6.jar;C:\Users\Nadia\.m2\repository\org\apache\maven\maven-artifact\3.8.6\maven-artifact-3.8.6.jar;C:\Users\Nadia\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.5\org.eclipse.sisu.plexus-0.3.5.jar;C:\Users\Nadia\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\Nadia\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.5\org.eclipse.sisu.inject-0.3.5.jar;C:\Users\Nadia\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Nadia\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar;C:\Users\Nadia\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Nadia\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Nadia\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Nadia"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.13"/>
+    <property name="testng.dtd.http" value="true"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nadia\AppData\Local\Temp\surefire11480276329968551687\surefirebooter16129722312814536086.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="user.name" value="Nadia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Nadia\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Nadia\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="user.dir" value="C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Java\jdk-11.0.13\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\apache-maven-3.8.6\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Nadia\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;SearchBox functionality should work with a valid product name&quot;, &quot;SearchBox Functionality&quot;](1)" classname="runner.TestRunner" time="38.402">
+    <failure message="Unable to find element with locator By.xpath: //*[@id=&quot;pageBodyContainer&quot;]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/div[1]/h3&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;LAPTOP-N9CFEN98&apos;, ip: &apos;192.168.157.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.xpath: //*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/div[1]/h3
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: RemoteWebDriver
+]]></failure>
+    <system-out><![CDATA[[DEBUG] suiteXmlPath: "C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\test-classes\TargetTestRunner.xml"
+[DEBUG] suiteXmlPath: "C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\test-classes\TargetRegressionTestRunner.xml"
+[DEBUG] suiteXmlPath: "C:\Users\Nadia\IdeaProjects\BDD_MavenProjectFramework_Day_51_WithNadia\target\test-classes\TargetSmokeTestRunner.xml"
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.setUpClass(org.testng.ITestContext)[pri:0, instance:null] -393284817
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.tearDownClass()[pri:0, instance:null] 1523153566
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@59a008ba] 353300875
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.setUpClass(org.testng.ITestContext)[pri:0, instance:null] -393284817
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.tearDownClass()[pri:0, instance:null] 1523153566
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RegressionTestRunner@7a1a14a4] 898170229
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.setUpClass(org.testng.ITestContext)[pri:0, instance:null] -393284817
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.tearDownClass()[pri:0, instance:null] 1523153566
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+[DEBUG] [Graph] ADDING NODE AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SmokeTestRunner@3b96c42e] -150622977
+[DEBUG] [Graph] ================ SORTING
+[DEBUG] [Graph] =============== DONE SORTING
+[DEBUG] [Graph] ====== SORTED NODES
+[DEBUG] [Graph] ====== END SORTED NODES
+***************** Automation Started *******************
+
+@RegressionTest @SmokeTest
+Scenario: SearchBox functionality should work with a valid product name # src/test/java/features/TargetSearchBox.feature:14
+[DEBUG] Using SLF4J as the default logging framework
+[DEBUG] -Dio.netty.leakDetection.level: simple
+[DEBUG] -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7c1c5936
+[DEBUG] -Dio.netty.noUnsafe: false
+[DEBUG] Java version: 11
+[DEBUG] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] sun.misc.Unsafe.copyMemory: available
+[DEBUG] sun.misc.Unsafe.storeFence: available
+[DEBUG] java.nio.Buffer.address: available
+[DEBUG] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] java.nio.Bits.unaligned: available, true
+[DEBUG] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @ce5a68e
+[DEBUG] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] sun.misc.Unsafe: available
+[DEBUG] maxDirectMemory: 3141533696 bytes (maybe)
+[DEBUG] -Dio.netty.tmpdir: C:\Users\Nadia\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] Platform: Windows
+[DEBUG] -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] java.nio.ByteBuffer.cleaner(): available
+[DEBUG] -Dio.netty.noPreferDirect: false
+[DEBUG] org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] -Dio.netty.eventLoopThreads: 16
+[DEBUG] -Dio.netty.noKeySetOptimization: false
+[DEBUG] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] -Dio.netty.allocator.numHeapArenas: 16
+[DEBUG] -Dio.netty.allocator.numDirectArenas: 16
+[DEBUG] -Dio.netty.allocator.pageSize: 8192
+[DEBUG] -Dio.netty.allocator.maxOrder: 9
+[DEBUG] -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] -Dio.netty.allocator.type: pooled
+[DEBUG] -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] -Dio.netty.processId: 18492 (auto-detected)
+[DEBUG] -Djava.net.preferIPv4Stack: false
+[DEBUG] -Djava.net.preferIPv6Addresses: false
+[DEBUG] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
+[DEBUG] -Dio.netty.buffer.checkAccessible: true
+[DEBUG] -Dio.netty.buffer.checkBounds: true
+[DEBUG] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@37c6b809
+[DEBUG] Using new Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to '/session'
+[DEBUG] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] -Dio.netty.recycler.ratio: 8
+[DEBUG] -Dio.netty.recycler.chunkSize: 32
+[DEBUG] -Dio.netty.recycler.blocking: false
+[DEBUG] brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 790
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using new Channel '[id: 0x094dbf59, L:/127.0.0.1:64877 - R:localhost/127.0.0.1:64869]' for 'GET' to '/json/version'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+host: localhost:64869
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 429
+
+[DEBUG] Adding key: http://localhost:64869 for channel [id: 0x094dbf59, L:/127.0.0.1:64877 - R:localhost/127.0.0.1:64869]
+[DEBUG] -Dio.netty.initialSeedUniquifier: 0x13c553aeb8708c4a
+[DEBUG] Using new Channel '[id: 0x5affa138, L:/127.0.0.1:64878 - R:localhost/127.0.0.1:64869]' for 'GET' to '/devtools/browser/7dfe3b90-41ed-47e7-a079-328abef30623'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/7dfe3b90-41ed-47e7-a079-328abef30623 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: M7of14f0WcmZvNTMSaz29A==
+sec-websocket-version: 13
+origin: http://localhost:64869
+host: localhost:64869
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: +XE0i/HRscTm1/4RnenB4wlbYEI=
+
+Browser : chrome
+Url : https://www.target.com/
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/window/maximize'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/window/maximize'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/window/maximize HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 51
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/timeouts'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/timeouts'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'DELETE' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/cookie'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for DELETE '/session/bf07f53389495bacc00ddc9322fd7021/cookie'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/bf07f53389495bacc00ddc9322fd7021/cookie HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/url'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/url'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/url HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+Target Home Page landed
+  Given user is landed on target homepage                               # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 68
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element/af43532e-8160-4db4-9d05-33fe14fed68c/clear'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element/af43532e-8160-4db4-9d05-33fe14fed68c/clear'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element/af43532e-8160-4db4-9d05-33fe14fed68c/clear HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 68
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element/af43532e-8160-4db4-9d05-33fe14fed68c/value'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element/af43532e-8160-4db4-9d05-33fe14fed68c/value'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element/af43532e-8160-4db4-9d05-33fe14fed68c/value HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 151
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+  And user enter valid product name                                     # stepdefinitions.SearchBoxSteps.user_enter_valid_product_name()
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 110
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element/4666489e-a1c6-4c1d-8ef0-200f84d5a580/click'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element/4666489e-a1c6-4c1d-8ef0-200f84d5a580/click'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element/4666489e-a1c6-4c1d-8ef0-200f84d5a580/click HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+  When user click on search button                                      # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'POST' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for POST '/session/bf07f53389495bacc00ddc9322fd7021/element'
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Channel Closed: [id: 0x094dbf59, L:/127.0.0.1:64877 ! R:localhost/127.0.0.1:64869] with attribute DISCARD
+[DEBUG] Channel Closed: [id: 0x5affa138, L:/127.0.0.1:64878 ! R:localhost/127.0.0.1:64869] with attribute NettyResponseFuture{currentRetry=0,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@4656ca7e,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@175818a0,
+	future=java.util.concurrent.CompletableFuture@6c02bdd7[Completed normally],
+	uri=ws://localhost:64869/devtools/browser/7dfe3b90-41ed-47e7-a079-328abef30623,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1659404038395}
+[DEBUG] Closing Channel [id: 0x5affa138, L:/127.0.0.1:64878 ! R:localhost/127.0.0.1:64869] 
+[DEBUG] Entry count for : http://localhost:64869 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0x094dbf59, L:/127.0.0.1:64877 ! R:localhost/127.0.0.1:64869] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0x094dbf59, L:/127.0.0.1:64877 ! R:localhost/127.0.0.1:64869]
+[DEBUG] Closed 1 connections out of 1 in 0 ms
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/bf07f53389495bacc00ddc9322fd7021/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 184
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+  Then user should see the valid product appears                        # stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears()
+      org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/div[1]/h3
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.getText(Unknown Source)
+	at configuration.common.GlobalReUsableMethods.verifyText(GlobalReUsableMethods.java:401)
+	at stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears(SearchBoxSteps.java:34)
+	at âœ½.user should see the valid product appears(file:///C:/Users/Nadia/IdeaProjects/BDD_MavenProjectFramework_Day_51_WithNadia/src/test/java/features/TargetSearchBox.feature:17)
+
+[DEBUG] Using pooled Channel '[id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]' for 'GET' to 'http://localhost:56646/session/bf07f53389495bacc00ddc9322fd7021/screenshot'
+[DEBUG] Using open Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] for GET '/session/bf07f53389495bacc00ddc9322fd7021/screenshot'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/bf07f53389495bacc00ddc9322fd7021/screenshot HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:56646
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:56646 for channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf07f53389495bacc00ddc9322fd7021, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64869/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf07f53389495bacc00ddc9322fd7021
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at configuration.hooks.BDDHooks.tearDown(BDDHooks.java:27)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 56646
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 01, 2022 9:33:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 01, 2022 9:33:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 103
+[1659404054.594][SEVERE]: Unable to receive message from renderer
+[1659404063.106][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;SearchBox functionality should not work with a Invalid product name&quot;, &quot;SearchBox Functionality&quot;](2)" classname="runner.TestRunner" time="60.227">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;headerPrimary&quot;]/div[6]/form/button[2]&quot;}&#10;  (Session info: chrome=103.0.5060.134)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;LAPTOP-N9CFEN98&apos;, ip: &apos;192.168.157.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7387920b215ea8495c9cc403ab5ff828, findElement {using=xpath, value=//*[@id=&quot;headerPrimary&quot;]/div[6]/form/button[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64983/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7387920b215ea8495c9cc403ab5ff828" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="headerPrimary"]/div[6]/form/button[2]"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7387920b215ea8495c9cc403ab5ff828, findElement {using=xpath, value=//*[@id="headerPrimary"]/div[6]/form/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64983/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7387920b215ea8495c9cc403ab5ff828
+]]></failure>
+    <system-out><![CDATA[
+@RegressionTest
+Scenario: SearchBox functionality should not work with a Invalid product name # src/test/java/features/TargetSearchBox.feature:20
+[DEBUG] Using new Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'POST' to '/session'
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 790
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+[DEBUG] Using new Channel '[id: 0x95a7881b, L:/127.0.0.1:64990 - R:localhost/127.0.0.1:64983]' for 'GET' to '/json/version'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+host: localhost:64983
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 429
+
+[DEBUG] Adding key: http://localhost:64983 for channel [id: 0x95a7881b, L:/127.0.0.1:64990 - R:localhost/127.0.0.1:64983]
+[DEBUG] Using new Channel '[id: 0x5b6eac2b, L:/127.0.0.1:64991 - R:localhost/127.0.0.1:64983]' for 'GET' to '/devtools/browser/eaad475b-5edd-41bb-9073-0789afbea54b'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/eaad475b-5edd-41bb-9073-0789afbea54b HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: 4X3VF+ckcWexx6n1MbNcLQ==
+sec-websocket-version: 13
+origin: http://localhost:64983
+host: localhost:64983
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: P5OhgA7ujhGye1uA2kw8Np5xdsg=
+
+Browser : chrome
+Url : https://www.target.com/
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'POST' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/window/maximize'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for POST '/session/7387920b215ea8495c9cc403ab5ff828/window/maximize'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/7387920b215ea8495c9cc403ab5ff828/window/maximize HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 51
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'POST' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/timeouts'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for POST '/session/7387920b215ea8495c9cc403ab5ff828/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/7387920b215ea8495c9cc403ab5ff828/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'POST' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/timeouts'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for POST '/session/7387920b215ea8495c9cc403ab5ff828/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/7387920b215ea8495c9cc403ab5ff828/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'DELETE' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/cookie'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for DELETE '/session/7387920b215ea8495c9cc403ab5ff828/cookie'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/7387920b215ea8495c9cc403ab5ff828/cookie HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'POST' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/url'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for POST '/session/7387920b215ea8495c9cc403ab5ff828/url'
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/7387920b215ea8495c9cc403ab5ff828/url HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+Target Home Page landed
+  Given user is landed on target homepage                                     # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+  And user enter Invalid product name                                         # stepdefinitions.SearchBoxSteps.user_enter_invalid_product_name()
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'POST' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/element'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for POST '/session/7387920b215ea8495c9cc403ab5ff828/element'
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/7387920b215ea8495c9cc403ab5ff828/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 110
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 1053
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+  When user click on search button                                            # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="headerPrimary"]/div[6]/form/button[2]"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7387920b215ea8495c9cc403ab5ff828, findElement {using=xpath, value=//*[@id="headerPrimary"]/div[6]/form/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64983/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7387920b215ea8495c9cc403ab5ff828
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at configuration.common.GlobalReUsableMethods.clickOnElement(GlobalReUsableMethods.java:40)
+	at pages.HomePage.clickOnSearchButton(HomePage.java:52)
+	at stepdefinitions.SearchBoxSteps.user_click_on_search_button(SearchBoxSteps.java:29)
+	at âœ½.user click on search button(file:///C:/Users/Nadia/IdeaProjects/BDD_MavenProjectFramework_Day_51_WithNadia/src/test/java/features/TargetSearchBox.feature:22)
+
+  Then user should see the partial matched product appears                    # stepdefinitions.SearchBoxSteps.user_should_see_the_partial_matched_product_appears()
+  But user should not see the Invalid product appears                         # stepdefinitions.SearchBoxSteps.user_should_not_see_the_invalid_product_appears()
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'GET' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828/screenshot'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for GET '/session/7387920b215ea8495c9cc403ab5ff828/screenshot'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/7387920b215ea8495c9cc403ab5ff828/screenshot HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 798576
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+
+    Embedding demo1 [image/png 598921 bytes]
+
+[DEBUG] Using pooled Channel '[id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]' for 'DELETE' to 'http://localhost:49897/session/7387920b215ea8495c9cc403ab5ff828'
+[DEBUG] Using open Channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897] for DELETE '/session/7387920b215ea8495c9cc403ab5ff828'
+[DEBUG] Channel Closed: [id: 0x5b6eac2b, L:/127.0.0.1:64991 ! R:localhost/127.0.0.1:64983] with attribute NettyResponseFuture{currentRetry=0,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@2e78f66,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@66c3aacb,
+	future=java.util.concurrent.CompletableFuture@16512003[Completed normally],
+	uri=ws://localhost:64983/devtools/browser/eaad475b-5edd-41bb-9073-0789afbea54b,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1659404073292}
+[DEBUG] Closing Channel [id: 0x5b6eac2b, L:/127.0.0.1:64991 ! R:localhost/127.0.0.1:64983] 
+[DEBUG] Unexpected I/O exception on channel [id: 0x95a7881b, L:/127.0.0.1:64990 - R:localhost/127.0.0.1:64983]
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258) ~[netty-buffer-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+[DEBUG] Closing Channel [id: 0x95a7881b, L:/127.0.0.1:64990 - R:localhost/127.0.0.1:64983] 
+[DEBUG] Channel Closed: [id: 0x95a7881b, L:/127.0.0.1:64990 ! R:localhost/127.0.0.1:64983] with attribute DISCARD
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/7387920b215ea8495c9cc403ab5ff828 HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:49897
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:49897 for channel [id: 0xa6de304f, L:/127.0.0.1:64982 - R:localhost/127.0.0.1:49897]
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:64983 : 1
+[DEBUG] Entry count for : http://localhost:49897 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0x95a7881b, L:/127.0.0.1:64990 ! R:localhost/127.0.0.1:64983] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0x95a7881b, L:/127.0.0.1:64990 ! R:localhost/127.0.0.1:64983]
+[DEBUG] Closed 1 connections out of 3 in 0 ms
+[DEBUG] Channel Closed: [id: 0xa6de304f, L:/127.0.0.1:64982 ! R:localhost/127.0.0.1:49897] with attribute DISCARD
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 49897
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 01, 2022 9:34:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 01, 2022 9:34:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 103
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;SearchBox functionality should work with a valid product name&quot;, &quot;SearchBox Functionality&quot;](1)" classname="runner.RegressionTestRunner" time="33.621">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;LAPTOP-N9CFEN98&apos;, ip: &apos;192.168.157.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [91545e891b2cebbc6c12b7f46dc5e3c4, findElement {using=xpath, value=//input[@id=&apos;search&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65081/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 91545e891b2cebbc6c12b7f46dc5e3c4" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91545e891b2cebbc6c12b7f46dc5e3c4, findElement {using=xpath, value=//input[@id='search']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65081/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91545e891b2cebbc6c12b7f46dc5e3c4
+]]></failure>
+    <system-out><![CDATA[***************** Automation End *******************
+[DEBUG] Entry count for : http://localhost:56646 : 1
+[DEBUG] Entry count for : http://localhost:49897 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646] isIdleTimeoutExpired=true isRemotelyClosed=false isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0x836963a6, L:/127.0.0.1:64868 - R:localhost/127.0.0.1:56646]
+[DEBUG] Adding Candidate expired Channel [id: 0xa6de304f, L:/127.0.0.1:64982 ! R:localhost/127.0.0.1:49897] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0xa6de304f, L:/127.0.0.1:64982 ! R:localhost/127.0.0.1:49897]
+[DEBUG] Closed 2 connections out of 2 in 0 ms
+[DEBUG] Channel Closed: [id: 0x836963a6, L:/127.0.0.1:64868 ! R:localhost/127.0.0.1:56646] with attribute DISCARD
+***************** Automation Started *******************
+
+@RegressionTest @SmokeTest
+Scenario: SearchBox functionality should work with a valid product name # src/test/java/features/TargetSearchBox.feature:14
+[DEBUG] Using new Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'POST' to '/session'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 790
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+[DEBUG] Using new Channel '[id: 0x7226986e, L:/127.0.0.1:65088 - R:localhost/127.0.0.1:65081]' for 'GET' to '/json/version'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+host: localhost:65081
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 429
+
+[DEBUG] Adding key: http://localhost:65081 for channel [id: 0x7226986e, L:/127.0.0.1:65088 - R:localhost/127.0.0.1:65081]
+[DEBUG] Using new Channel '[id: 0x9eeec2a8, L:/127.0.0.1:65089 - R:localhost/127.0.0.1:65081]' for 'GET' to '/devtools/browser/d0360ec9-54b4-4e81-8b2f-c5c2f4b9fed8'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/d0360ec9-54b4-4e81-8b2f-c5c2f4b9fed8 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: TysGdEndmP57yhnsYPfoDQ==
+sec-websocket-version: 13
+origin: http://localhost:65081
+host: localhost:65081
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: 4v22LP2yKrnuuP+DhPI/mpAgnRg=
+
+Browser : chrome
+Url : https://www.target.com/
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'POST' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/window/maximize'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for POST '/session/91545e891b2cebbc6c12b7f46dc5e3c4/window/maximize'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/91545e891b2cebbc6c12b7f46dc5e3c4/window/maximize HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 51
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'POST' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/timeouts'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for POST '/session/91545e891b2cebbc6c12b7f46dc5e3c4/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/91545e891b2cebbc6c12b7f46dc5e3c4/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'POST' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/timeouts'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for POST '/session/91545e891b2cebbc6c12b7f46dc5e3c4/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/91545e891b2cebbc6c12b7f46dc5e3c4/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'DELETE' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/cookie'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for DELETE '/session/91545e891b2cebbc6c12b7f46dc5e3c4/cookie'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/91545e891b2cebbc6c12b7f46dc5e3c4/cookie HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'POST' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/url'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for POST '/session/91545e891b2cebbc6c12b7f46dc5e3c4/url'
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Channel Closed: [id: 0x7226986e, L:/127.0.0.1:65088 ! R:localhost/127.0.0.1:65081] with attribute DISCARD
+[DEBUG] Channel Closed: [id: 0x9eeec2a8, L:/127.0.0.1:65089 ! R:localhost/127.0.0.1:65081] with attribute NettyResponseFuture{currentRetry=0,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@66a4e175,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@23a663c5,
+	future=java.util.concurrent.CompletableFuture@2ba2c916[Completed normally],
+	uri=ws://localhost:65081/devtools/browser/d0360ec9-54b4-4e81-8b2f-c5c2f4b9fed8,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1659404143066}
+[DEBUG] Closing Channel [id: 0x9eeec2a8, L:/127.0.0.1:65089 ! R:localhost/127.0.0.1:65081] 
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/91545e891b2cebbc6c12b7f46dc5e3c4/url HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+Target Home Page landed
+  Given user is landed on target homepage                               # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'POST' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/element'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for POST '/session/91545e891b2cebbc6c12b7f46dc5e3c4/element'
+[DEBUG] Entry count for : http://localhost:65081 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0x7226986e, L:/127.0.0.1:65088 ! R:localhost/127.0.0.1:65081] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0x7226986e, L:/127.0.0.1:65088 ! R:localhost/127.0.0.1:65081]
+[DEBUG] Closed 1 connections out of 1 in 0 ms
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/91545e891b2cebbc6c12b7f46dc5e3c4/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 68
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+  And user enter valid product name                                     # stepdefinitions.SearchBoxSteps.user_enter_valid_product_name()
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91545e891b2cebbc6c12b7f46dc5e3c4, findElement {using=xpath, value=//input[@id='search']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65081/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91545e891b2cebbc6c12b7f46dc5e3c4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.clear(Unknown Source)
+	at configuration.common.GlobalReUsableMethods.enterValueOnElement(GlobalReUsableMethods.java:44)
+	at pages.HomePage.enterProductName(HomePage.java:49)
+	at stepdefinitions.SearchBoxSteps.user_enter_valid_product_name(SearchBoxSteps.java:24)
+	at âœ½.user enter valid product name(file:///C:/Users/Nadia/IdeaProjects/BDD_MavenProjectFramework_Day_51_WithNadia/src/test/java/features/TargetSearchBox.feature:15)
+
+  When user click on search button                                      # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+  Then user should see the valid product appears                        # stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears()
+[DEBUG] Using pooled Channel '[id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]' for 'GET' to 'http://localhost:64375/session/91545e891b2cebbc6c12b7f46dc5e3c4/screenshot'
+[DEBUG] Using open Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] for GET '/session/91545e891b2cebbc6c12b7f46dc5e3c4/screenshot'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/91545e891b2cebbc6c12b7f46dc5e3c4/screenshot HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:64375
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:64375 for channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91545e891b2cebbc6c12b7f46dc5e3c4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65081/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91545e891b2cebbc6c12b7f46dc5e3c4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at configuration.hooks.BDDHooks.tearDown(BDDHooks.java:27)
+
+]]></system-out>
+    <system-err><![CDATA[┌──────────────────────────────────────────────────────────────────────────┐
+│ View your Cucumber Report at:                                            │
+│ https://reports.cucumber.io/reports/beb252ed-5e1e-4e71-a33b-2d85bd22f13f │
+│                                                                          │
+│ This report will self-destruct in 24h.                                   │
+│ Keep reports forever: https://reports.cucumber.io/profile                │
+└──────────────────────────────────────────────────────────────────────────┘Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 64375
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 01, 2022 9:35:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 01, 2022 9:35:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 103
+[1659404150.418][SEVERE]: Unable to receive message from renderer
+[1659404150.419][SEVERE]: Unable to receive message from renderer
+[1659404150.419][SEVERE]: Unable to receive message from renderer
+[1659404154.452][WARNING]: Timed out connecting to Chrome, retrying...
+[1659404166.862][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;SearchBox functionality should not work with a Invalid product name&quot;, &quot;SearchBox Functionality&quot;](2)" classname="runner.RegressionTestRunner" time="35.439">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;LAPTOP-N9CFEN98&apos;, ip: &apos;192.168.157.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a6db2134e7c8fcfc44123a7dad16f7cd, findElement {using=xpath, value=//*[@id=&quot;headerPrimary&quot;]/div[6]/form/button[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65163/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a6db2134e7c8fcfc44123a7dad16f7cd" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6db2134e7c8fcfc44123a7dad16f7cd, findElement {using=xpath, value=//*[@id="headerPrimary"]/div[6]/form/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65163/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6db2134e7c8fcfc44123a7dad16f7cd
+]]></failure>
+    <system-out><![CDATA[
+@RegressionTest
+Scenario: SearchBox functionality should not work with a Invalid product name # src/test/java/features/TargetSearchBox.feature:20
+[DEBUG] Using new Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'POST' to '/session'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 789
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+[DEBUG] Using new Channel '[id: 0xbfec11b7, L:/127.0.0.1:65170 - R:localhost/127.0.0.1:65163]' for 'GET' to '/json/version'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+host: localhost:65163
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 429
+
+[DEBUG] Adding key: http://localhost:65163 for channel [id: 0xbfec11b7, L:/127.0.0.1:65170 - R:localhost/127.0.0.1:65163]
+[DEBUG] Using new Channel '[id: 0xd41df5ba, L:/127.0.0.1:65171 - R:localhost/127.0.0.1:65163]' for 'GET' to '/devtools/browser/7d324105-a279-423f-96ab-d8c9fc843b1d'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/7d324105-a279-423f-96ab-d8c9fc843b1d HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: k0VgOzTdN2Aw5Ua8aV6qFQ==
+sec-websocket-version: 13
+origin: http://localhost:65163
+host: localhost:65163
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: zElWPpte8lqueX9+arUaxrOR2wg=
+
+Browser : chrome
+Url : https://www.target.com/
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'POST' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/window/maximize'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for POST '/session/a6db2134e7c8fcfc44123a7dad16f7cd/window/maximize'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a6db2134e7c8fcfc44123a7dad16f7cd/window/maximize HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 51
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'POST' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/timeouts'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for POST '/session/a6db2134e7c8fcfc44123a7dad16f7cd/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a6db2134e7c8fcfc44123a7dad16f7cd/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'POST' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/timeouts'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for POST '/session/a6db2134e7c8fcfc44123a7dad16f7cd/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a6db2134e7c8fcfc44123a7dad16f7cd/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'DELETE' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/cookie'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for DELETE '/session/a6db2134e7c8fcfc44123a7dad16f7cd/cookie'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/a6db2134e7c8fcfc44123a7dad16f7cd/cookie HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'POST' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/url'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for POST '/session/a6db2134e7c8fcfc44123a7dad16f7cd/url'
+[DEBUG] Entry count for : http://localhost:65163 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65163 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65163 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65163 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65163 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Channel Closed: [id: 0xbfec11b7, L:/127.0.0.1:65170 ! R:localhost/127.0.0.1:65163] with attribute DISCARD
+[DEBUG] Channel Closed: [id: 0xd41df5ba, L:/127.0.0.1:65171 ! R:localhost/127.0.0.1:65163] with attribute NettyResponseFuture{currentRetry=0,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@60e70c79,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@25e58e01,
+	future=java.util.concurrent.CompletableFuture@34d3829b[Completed normally],
+	uri=ws://localhost:65163/devtools/browser/7d324105-a279-423f-96ab-d8c9fc843b1d,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1659404176505}
+[DEBUG] Closing Channel [id: 0xd41df5ba, L:/127.0.0.1:65171 ! R:localhost/127.0.0.1:65163] 
+[DEBUG] Entry count for : http://localhost:65163 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0xbfec11b7, L:/127.0.0.1:65170 ! R:localhost/127.0.0.1:65163] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0xbfec11b7, L:/127.0.0.1:65170 ! R:localhost/127.0.0.1:65163]
+[DEBUG] Closed 1 connections out of 2 in 0 ms
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a6db2134e7c8fcfc44123a7dad16f7cd/url HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+Target Home Page landed
+  Given user is landed on target homepage                                     # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+  And user enter Invalid product name                                         # stepdefinitions.SearchBoxSteps.user_enter_invalid_product_name()
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'POST' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/element'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for POST '/session/a6db2134e7c8fcfc44123a7dad16f7cd/element'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a6db2134e7c8fcfc44123a7dad16f7cd/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 110
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+  When user click on search button                                            # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6db2134e7c8fcfc44123a7dad16f7cd, findElement {using=xpath, value=//*[@id="headerPrimary"]/div[6]/form/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65163/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6db2134e7c8fcfc44123a7dad16f7cd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at configuration.common.GlobalReUsableMethods.clickOnElement(GlobalReUsableMethods.java:40)
+	at pages.HomePage.clickOnSearchButton(HomePage.java:52)
+	at stepdefinitions.SearchBoxSteps.user_click_on_search_button(SearchBoxSteps.java:29)
+	at âœ½.user click on search button(file:///C:/Users/Nadia/IdeaProjects/BDD_MavenProjectFramework_Day_51_WithNadia/src/test/java/features/TargetSearchBox.feature:22)
+
+  Then user should see the partial matched product appears                    # stepdefinitions.SearchBoxSteps.user_should_see_the_partial_matched_product_appears()
+  But user should not see the Invalid product appears                         # stepdefinitions.SearchBoxSteps.user_should_not_see_the_invalid_product_appears()
+[DEBUG] Using pooled Channel '[id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]' for 'GET' to 'http://localhost:62721/session/a6db2134e7c8fcfc44123a7dad16f7cd/screenshot'
+[DEBUG] Using open Channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721] for GET '/session/a6db2134e7c8fcfc44123a7dad16f7cd/screenshot'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/a6db2134e7c8fcfc44123a7dad16f7cd/screenshot HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:62721
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:62721 for channel [id: 0x4c130f3a, L:/127.0.0.1:65162 - R:localhost/127.0.0.1:62721]
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6db2134e7c8fcfc44123a7dad16f7cd, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65163/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6db2134e7c8fcfc44123a7dad16f7cd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at configuration.hooks.BDDHooks.tearDown(BDDHooks.java:27)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 62721
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 01, 2022 9:36:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 01, 2022 9:36:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 103
+[1659404190.176][WARNING]: Timed out connecting to Chrome, retrying...
+[1659404202.354][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;SearchBox functionality should work with a valid product name&quot;, &quot;SearchBox Functionality&quot;](1)" classname="runner.SmokeTestRunner" time="32.22">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;LAPTOP-N9CFEN98&apos;, ip: &apos;192.168.157.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6835a5af6bcd91489c077f7a1ea7323f, findElement {using=xpath, value=//input[@id=&apos;search&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65244/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6835a5af6bcd91489c077f7a1ea7323f" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6835a5af6bcd91489c077f7a1ea7323f, findElement {using=xpath, value=//input[@id='search']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65244/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6835a5af6bcd91489c077f7a1ea7323f
+]]></failure>
+    <system-out><![CDATA[***************** Automation End *******************
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+***************** Automation Started *******************
+
+@RegressionTest @SmokeTest
+Scenario: SearchBox functionality should work with a valid product name # src/test/java/features/TargetSearchBox.feature:14
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Using new Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'POST' to '/session'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 790
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+[DEBUG] Using new Channel '[id: 0x8f9bd72e, L:/127.0.0.1:65251 - R:localhost/127.0.0.1:65244]' for 'GET' to '/json/version'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+host: localhost:65244
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 429
+
+[DEBUG] Adding key: http://localhost:65244 for channel [id: 0x8f9bd72e, L:/127.0.0.1:65251 - R:localhost/127.0.0.1:65244]
+[DEBUG] Using new Channel '[id: 0x1fb264a2, L:/127.0.0.1:65252 - R:localhost/127.0.0.1:65244]' for 'GET' to '/devtools/browser/dc3c2000-df09-450b-a4d7-7566b96e965d'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/dc3c2000-df09-450b-a4d7-7566b96e965d HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: jZaVzH/0iphFLt9eQIeffw==
+sec-websocket-version: 13
+origin: http://localhost:65244
+host: localhost:65244
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: Z4HHvSETkWuSc7tT2SjQ4LcVY8U=
+
+Browser : chrome
+Url : https://www.target.com/
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'POST' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/window/maximize'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for POST '/session/6835a5af6bcd91489c077f7a1ea7323f/window/maximize'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6835a5af6bcd91489c077f7a1ea7323f/window/maximize HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 51
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'POST' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/timeouts'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for POST '/session/6835a5af6bcd91489c077f7a1ea7323f/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6835a5af6bcd91489c077f7a1ea7323f/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'POST' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/timeouts'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for POST '/session/6835a5af6bcd91489c077f7a1ea7323f/timeouts'
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6835a5af6bcd91489c077f7a1ea7323f/timeouts HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'DELETE' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/cookie'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for DELETE '/session/6835a5af6bcd91489c077f7a1ea7323f/cookie'
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/6835a5af6bcd91489c077f7a1ea7323f/cookie HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'POST' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/url'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for POST '/session/6835a5af6bcd91489c077f7a1ea7323f/url'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Channel Closed: [id: 0x1fb264a2, L:/127.0.0.1:65252 ! R:localhost/127.0.0.1:65244] with attribute NettyResponseFuture{currentRetry=0,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@557741d1,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@1075c51b,
+	future=java.util.concurrent.CompletableFuture@36093f96[Completed normally],
+	uri=ws://localhost:65244/devtools/browser/dc3c2000-df09-450b-a4d7-7566b96e965d,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1659404213410}
+[DEBUG] Channel Closed: [id: 0x8f9bd72e, L:/127.0.0.1:65251 ! R:localhost/127.0.0.1:65244] with attribute DISCARD
+[DEBUG] Closing Channel [id: 0x1fb264a2, L:/127.0.0.1:65252 ! R:localhost/127.0.0.1:65244] 
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6835a5af6bcd91489c077f7a1ea7323f/url HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+Target Home Page landed
+  Given user is landed on target homepage                               # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'POST' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/element'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for POST '/session/6835a5af6bcd91489c077f7a1ea7323f/element'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:65244 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0x8f9bd72e, L:/127.0.0.1:65251 ! R:localhost/127.0.0.1:65244] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0x8f9bd72e, L:/127.0.0.1:65251 ! R:localhost/127.0.0.1:65244]
+[DEBUG] Closed 1 connections out of 3 in 0 ms
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6835a5af6bcd91489c077f7a1ea7323f/element HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Content-Length: 68
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+  And user enter valid product name                                     # stepdefinitions.SearchBoxSteps.user_enter_valid_product_name()
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6835a5af6bcd91489c077f7a1ea7323f, findElement {using=xpath, value=//input[@id='search']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65244/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6835a5af6bcd91489c077f7a1ea7323f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.clear(Unknown Source)
+	at configuration.common.GlobalReUsableMethods.enterValueOnElement(GlobalReUsableMethods.java:44)
+	at pages.HomePage.enterProductName(HomePage.java:49)
+	at stepdefinitions.SearchBoxSteps.user_enter_valid_product_name(SearchBoxSteps.java:24)
+	at âœ½.user enter valid product name(file:///C:/Users/Nadia/IdeaProjects/BDD_MavenProjectFramework_Day_51_WithNadia/src/test/java/features/TargetSearchBox.feature:15)
+
+  When user click on search button                                      # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+  Then user should see the valid product appears                        # stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears()
+[DEBUG] Using pooled Channel '[id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]' for 'GET' to 'http://localhost:61594/session/6835a5af6bcd91489c077f7a1ea7323f/screenshot'
+[DEBUG] Using open Channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594] for GET '/session/6835a5af6bcd91489c077f7a1ea7323f/screenshot'
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:64375 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Adding Candidate expired Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375] isIdleTimeoutExpired=true isRemotelyClosed=false isTtlExpired=false
+[DEBUG] Closing Idle Channel [id: 0x0ed55dec, L:/127.0.0.1:65080 - R:localhost/127.0.0.1:64375]
+[DEBUG] Closed 1 connections out of 2 in 0 ms
+[DEBUG] Channel Closed: [id: 0x0ed55dec, L:/127.0.0.1:65080 ! R:localhost/127.0.0.1:64375] with attribute DISCARD
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] Entry count for : http://localhost:62721 : 1
+[DEBUG] 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/6835a5af6bcd91489c077f7a1ea7323f/screenshot HTTP/1.1
+User-Agent: selenium/4.3.0 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:61594
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 977
+
+[DEBUG] Adding key: http://localhost:61594 for channel [id: 0x3a578db8, L:/127.0.0.1:65243 - R:localhost/127.0.0.1:61594]
+      org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6835a5af6bcd91489c077f7a1ea7323f, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65244/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6835a5af6bcd91489c077f7a1ea7323f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at configuration.hooks.BDDHooks.tearDown(BDDHooks.java:27)
+
+]]></system-out>
+    <system-err><![CDATA[┌──────────────────────────────────────────────────────────────────────────┐
+│ View your Cucumber Report at:                                            │
+│ https://reports.cucumber.io/reports/3a78eabe-fa43-499d-b77c-3e18951f88ae │
+│                                                                          │
+│ This report will self-destruct in 24h.                                   │
+│ Keep reports forever: https://reports.cucumber.io/profile                │
+└──────────────────────────────────────────────────────────────────────────┘Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 61594
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 01, 2022 9:36:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 01, 2022 9:36:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 103
+[1659404218.891][SEVERE]: Unable to receive message from renderer
+[1659404223.077][WARNING]: Timed out connecting to Chrome, retrying...
+[1659404235.807][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+</testsuite>
