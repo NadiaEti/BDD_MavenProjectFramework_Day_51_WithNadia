@@ -36,22 +36,18 @@ public class SearchBoxSteps extends WebTestBase {
     public void user_should_see_the_valid_product_appears() {
         verifyText(homePage.verifySearchedProduct,"Popular Filters","Product name does not match");
     }
-
-
-    @Given("user enter Invalid product name")
-    public void user_enter_invalid_product_name() {
-
-    }
-
-    @Then("user should see the partial matched product appears")
-    public void user_should_see_the_partial_matched_product_appears() {
-
-    }
-
-    @Then("user should not see the Invalid product appears")
-    public void user_should_not_see_the_invalid_product_appears() {
-
-    }
+//    @Given("user enter Invalid product name")
+//    public void user_enter_invalid_product_name() {
+//
+//    }
+//    @Then("user should see the partial matched product appears")
+//    public void user_should_see_the_partial_matched_product_appears() {
+//
+//    }
+//    @Then("user should not see the Invalid product appears")
+//    public void user_should_not_see_the_invalid_product_appears() {
+//
+//    }
 
 
     @Given("user enter {string} valid product name")

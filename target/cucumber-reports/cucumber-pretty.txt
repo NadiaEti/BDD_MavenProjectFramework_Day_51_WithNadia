@@ -6,7 +6,47 @@ Scenario: SearchBox functionality should work with a valid product name # src/te
   When user click on search button                                      # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
   Then user should see the valid product appears                        # stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears()
 
-@RegressionTest @Pending
-Scenario: SearchBox functionality should not work with a Invalid product name # src/test/java/features/TargetSearchBox.feature:20
-  Given user is landed on target homepage                                     # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
-  And user enter Invalid product name                                         # stepdefinitions.SearchBoxSteps.user_enter_invalid_product_name()
+@RegressionTest
+Scenario: SearchBox functionality should work with any valid product name # src/test/java/features/TargetSearchBox.feature:61
+  Given user is landed on target homepage                                 # stepdefinitions.SearchBoxSteps.user_is_landed_on_target_homepage()
+  And user enter valid product name for search                            # stepdefinitions.SearchBoxSteps.user_enter_valid_product_name_for_search(io.cucumber.datatable.DataTable)
+    | product Name |
+    | Bounty       |
+  When user click on search button                                        # stepdefinitions.SearchBoxSteps.user_click_on_search_button()
+  Then user should see the valid product appears after search             # stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears_after_search(io.cucumber.datatable.DataTable)
+    | Expected product Name |
+    | Bounty                |
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/div[1]/h3"}
+  (Session info: chrome=104.0.5112.80)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-N9CFEN98', ip: '192.168.157.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a06aa77726f214353cf0301118036dae, findElement {using=xpath, value=//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/div[1]/h3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.80, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Nadia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63821}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63821/devtoo..., se:cdpVersion: 104.0.5112.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a06aa77726f214353cf0301118036dae
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy29.getText(Unknown Source)
+	at configuration.common.GlobalReUsableMethods.verifyText(GlobalReUsableMethods.java:401)
+	at stepdefinitions.SearchBoxSteps.user_should_see_the_valid_product_appears_after_search(SearchBoxSteps.java:118)
+	at ✽.user should see the valid product appears after search(file:///C:/Users/Nadia/IdeaProjects/BDD_MavenProjectFramework_Day_51_WithNadia/src/test/java/features/TargetSearchBox.feature:66)
+
+
+    Embedding demo1 [image/png 350440 bytes]
+
